@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>About | Westeros Sorter</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+<div class="about-page">
+
+    <div class="about-topbar">
+        <button class="back-btn" id="back-from-about">
+            🏰 Return to Winterfell
+        </button>
+
+        <div class="about-links">
+            <a href="https://github.com/Randomrug" target="_blank" class="about-link">
+                🐙 GitHub
+            </a>
+            <a href="mailto:jaimefuckinglannister7@gmail.com" class="about-link">
+                📧 Email Me
+            </a>
+        </div>
+    </div>
+<h4>
+    📜 RAVEN NOTICE: The Like Button has temporarily joined the Night's Watch and is refusing to do its duty. Comments work normally, but likes may not update correctly. The maesters are investigating.
+    ( lying) i just can't figure it out , I made a fuss with supabase ig. And i Absolutely dont have time to fix it. Why am I even over explaining things.. It's not like this site it going to be shown in the google search page... 
+</h4>
+    <div class="about-content">
+
+           
+
+        <div class="about-main">
+            <img src="abt_me.png" alt="About Me" class="about-full-image">
+        </div>
+
+
+
+        <aside class="about-sidebar">
+            <h2>📜 Ravens From The Realm</h2>
+            <textarea id="review-input" placeholder="Drop your opinion on this madness..."></textarea>
+            <button id="submit-review" class="review-btn">
+                🐦 Send Raven
+            </button>
+            <div class="review-controls">
+                <div class="review-filter-group">
+                    <label for="review-sort">Sort by</label>
+                    <select id="review-sort">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="liked">Most Liked</option>
+                    </select>
+                </div>
+                <div class="review-filter-group">
+                    <label for="review-date">Date</label>
+                    <input id="review-date" type="date" />
+                </div>
+            </div>
+            <div id="review-notice" class="review-notice"></div>
+            <div id="reviews-container"></div>
+        </aside>
+    </div>
+
+</div>
+
+<!-- Music: theme audio + toggle -->
+<audio id="theme-music" src="music/Game_of_Thrones_Theme_Song.mp3" loop></audio>
+<button id="music-toggle" aria-label="Toggle music">🔊</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.40.0"></script>
+<script src="script.js"></script>
+<script src="music.js"></script>
+<script src="supabase.js"></script>
+<script src="roastme.js"></script>
+
+</body>
+</html>

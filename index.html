@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Westeros Sorter | Game of Thrones</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-container" id="app">
+
+    <!-- ========================================= -->
+    <!-- HOME SCREEN -->
+    <!-- ========================================= -->
+
+    <div id="home-screen" class="glass-panel">
+
+        <div class="hero-icon">🐉⚔️🐺</div>
+
+        <h1>GAME OF THRONES</h1>
+
+        <div class="tagline">
+            The game has already begun. The only question is where you belong.
+        </div>
+
+        <div class="welcome-msg">
+            In the Seven Kingdoms, every choice has consequences.
+            Choose your champions, discover your spirit creature,
+            and uncover where your loyalties truly lie.
+        </div>
+
+        <div class="grand-cards">
+
+            <!-- Character Sorter -->
+
+            <div class="grand-card" id="character-mode-btn">
+
+                <div class="grand-icon">⚔️</div>
+
+                <h3>The Great Character Sorter</h3>
+
+                <p>
+                    Face impossible choices and discover your true
+                    ranking of Westeros' greatest characters.
+                </p>
+
+                <button class="grand-btn">
+                    Join the Game
+                </button>
+
+            </div>
+
+            <!-- Creature Sorter -->
+
+            <div class="grand-card" id="animal-mode-btn">
+
+                <div class="grand-icon">🐺</div>
+
+                <h3>The Beast of Your Banner</h3>
+
+                <p>
+                    Among dragons, direwolves, and legendary companions,
+                    discover the creature that best reflects your nature.
+                </p>
+
+                <button class="grand-btn">
+                    Reveal My Beast
+                </button>
+
+            </div>
+
+            <!-- Quote Quiz -->
+
+            <div class="grand-card" id="quote-mode-btn">
+
+                <div class="grand-icon">📜</div>
+
+                <h3>Who Said It?</h3>
+
+                <p>
+                    Test your knowledge of the most iconic words
+                    ever spoken in Westeros.
+                </p>
+
+                <button class="grand-btn">
+                    Begin The Trial
+                </button>
+
+            </div>
+
+           <!-- Tier Mode -->
+             <div class="grand-card" id="tier-mode-btn">
+
+            <div class="grand-icon">👑</div>
+
+            <h3>Rank The Realm</h3>
+
+            <p>
+                Place every soul of Westeros where they truly belong.
+                Your opinions will definitely start wars.
+            </p>
+
+            <button class="grand-btn">
+                Begin Ranking
+            </button>
+
+        </div>
+
+            <!-- About Page -->
+            <div class="grand-card">
+
+                <div class="grand-icon">🍷</div>
+
+                <h3>About The Mad King Who Built This</h3>
+
+                <p>
+                    Against all reasonable advice,
+                    this website was created.
+                </p>
+
+                <button id="about-btn" type="button" class="grand-btn">
+                    Enter At Ur Own Risk
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="footer-quote" id="home-quote"></div>
+
+    </div>
+
+    <div id="submode-screen" class="glass-panel hidden">
+
+        <button class="back-btn" id="back-from-submode">
+            🏰 Return to Winterfell
+        </button>
+
+        <h2>⚔️ Small Council ⚔️</h2>
+
+        <p class="sub-desc">
+            Every lord and lady believes they deserve the Iron Throne.
+            Let us see who truly earns your loyalty.
+        </p>
+
+        <div class="mode-grid" id="character-submodes">
+
+            <button class="mode-btn" data-submode="top20">
+                ⚔️ A Short Campaign (Top 20)
+            </button>
+
+            <button class="mode-btn" data-submode="top50">
+                ⚔️ The War of Five Kings (Top 50)
+            </button>
+
+            <button class="mode-btn" data-submode="all">
+                ⚔️ The Long Night (All 102)
+            </button>
+
+        </div>
+
+        <div class="footer-quote" id="submode-quote"></div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- BATTLE SCREEN -->
+    <!-- ========================================= -->
+
+    <div id="sort-screen" class="hidden glass-panel">
+
+        <button class="back-btn" id="back-from-battle">
+            🏰 Return to Winterfell
+        </button>
+
+        <div class="battle-header">
+
+            <div class="progress-area" id="progress">
+                The maesters are recording...
+            </div>
+
+            <div class="battle-info" id="battle-info">
+                ⚔️ Phase of Blades
+            </div>
+
+        </div>
+
+        <h2 id="battle-question">
+            Whom would you stand beside when winter comes?
+        </h2>
+
+        <div class="battle-container">
+
+            <div class="card" id="left-card"></div>
+
+            <div class="vs">
+                VS
+            </div>
+
+            <div class="card" id="right-card"></div>
+
+        </div>
+
+        <div class="footer-quote" id="battle-quote"></div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- RESULTS SCREEN -->
+    <!-- ========================================= -->
+
+    <div id="result-screen" class="hidden glass-panel">
+
+        <button class="back-btn" id="back-from-results">
+            🏰 Return to Winterfell
+        </button>
+
+        <div id="results-container"></div>
+
+        <div class="footer-quote" id="result-quote"></div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- QUIZ SCREEN -->
+    <!-- ========================================= -->
+
+    <div id="quiz-screen" class="hidden glass-panel">
+
+        <button class="back-btn" id="back-from-quiz">
+            🏰 Return to Winterfell
+        </button>
+
+        <h2>📜 WHO SAID IT?</h2>
+
+        <p class="sub-desc">
+            The ravens have delivered words from across Westeros.
+            Can you name the speaker?
+        </p>
+
+        <div id="quiz-progress" class="progress-area">
+            Question 1 / 10
+        </div>
+
+        <div class="quote-box" id="quote-text">
+            Winter is coming.
+        </div>
+
+        <div class="quiz-options" id="quiz-options">
+        </div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- QUIZ RESULT SCREEN -->
+    <!-- ========================================= -->
+
+    <div id="quiz-result-screen" class="hidden glass-panel">
+
+        <button class="back-btn" id="back-from-quiz-results">
+            🏰 Return to Winterfell
+        </button>
+
+        <h1>📜 Trial Complete</h1>
+
+        <div id="quiz-score"></div>
+
+        <div id="quiz-message"></div>
+
+        <br>
+
+        <button id="play-quiz-again" class="grand-btn">
+            ⚔️ Face Another Trial
+        </button>
+
+    </div>
+
+<!-- ========================================= -->
+
+<!-- TIER SCREEN -->
+
+<!-- ========================================= -->
+
+<div id="tier-screen" class="hidden glass-panel">
+
+<button class="back-btn" id="back-from-tier">
+    🏰 Return to Winterfell
+</button>
+
+<div class="tier-header-section">
+    <div class="tier-title-left">
+        <h1>👑 Rank The Realm</h1>
+        <p class="sub-desc">
+            Rename the tiers. Create chaos.
+            The Seven Kingdoms will judge accordingly.
+        </p>
+    </div>
+    <div class="tier-title-right">
+        <div class="tier-email-banner">
+            📧 JAIMEFUCKINGLANNISTER7@GMAIL.COM
+        </div>
+        <div class="tier-email-tagline">
+            Ready to mock, argue,
+            or (rarely) agree with your rankings.
+        </div>
+    </div>
+</div>
+
+<div id="chaos-message" class="footer-quote">
+    Tyrion has requested additional wine after seeing your rankings.
+</div>
+
+    <div class="tier-notice">
+        <div class="notice-item">🔥 Rename the tiers however you want</div>
+        <div class="notice-item">📸 Save your masterpiece</div>
+        <div class="notice-item">📧 Email me your final ranking</div>
+        <div class="notice-item">⚠️ I will absolutely judge you</div>
+    </div>
+
+    <div class="tier-actions">
+        <button id="save-tier-btn" class="tier-action-btn">📸 Save My Tier List</button>
+        <button id="email-tier-btn" class="tier-action-btn">⚔️ Let Jaime Judge You</button>
+    </div>
+
+    <div class="tier-layout">
+
+        <div id="tier-capture">
+
+    <div class="tier-row">
+        <textarea class="tier-title">🏆 ON THE IRON THRONE</textarea>
+        <textarea class="tier-description">The GOAT. No further questions.</textarea>
+        <div class="tier-dropzone"></div>
+    </div>
+
+    <div class="tier-row">
+        <textarea class="tier-title">🎬 WHAT A JOURNEY</textarea>
+        <textarea class="tier-description">What an arc. What a story. What a character.</textarea>
+        <div class="tier-dropzone"></div>
+    </div>
+
+    <div class="tier-row">
+        <textarea class="tier-title">✅ YOU DID THE JOB, BRO</textarea>
+        <textarea class="tier-description">Likeable. Solid. Dependable.
+You showed up and delivered.</textarea>
+        <div class="tier-dropzone"></div>
+    </div>
+
+    <div class="tier-row">
+        <textarea class="tier-title">📚 BRO I NEED A WIKI PAGE FOR YOU</textarea>
+        <textarea class="tier-description">Too many layers.
+Too many schemes.
+Too much lore.</textarea>
+        <div class="tier-dropzone"></div>
+    </div>
+
+    <div class="tier-row">
+        <textarea class="tier-title">🤦 YOU LITERALLY HAD ONE JOB</textarea>
+        <textarea class="tier-description">You had potential.
+Then you did... that.</textarea>
+        <div class="tier-dropzone"></div>
+    </div>
+
+    <div class="tier-row">
+        <textarea class="tier-title">🚫 GET OFF MY SCREEN</textarea>
+        <textarea class="tier-description">Every second you're here
+raises my blood pressure.</textarea>
+        <div class="tier-dropzone"></div>
+    </div>
+
+</div>
+
+        
+        <div class="tier-side">
+            <h2>🐉 Souls Awaiting Placement 🐉</h2>
+            <div id="character-pool"></div>
+        </div>
+
+    </div>
+
+    <div class="footer-quote">
+        Don't like my tier names?
+        Rename them and show me your creativity.
+
+        <br><br>
+
+        📧 jaimefuckinglannister7@gmail.com
+    </div>
+
+    </div>
+
+</div>
+
+<!-- Music: theme audio + toggle -->
+<audio id="theme-music" src="music/Game_of_Thrones_Theme_Song.mp3" loop></audio>
+<button id="music-toggle" aria-label="Toggle music">🔊</button>
+
+<script src="script.js"></script>
+<script src="music.js"></script>
+<script src="quiz.js"></script>
+<script src="tier.js"></script>
+<script src="roastme.js"></script>
+
+</body>
+</html>

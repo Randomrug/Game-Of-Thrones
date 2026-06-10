@@ -1,0 +1,716 @@
+[
+    {
+        "id": 1,
+        "name": "Tyrion Lannister",
+        "seed_rank": 1,
+        "mode": "top20",
+        "image": "/images/Tyrion Lannister.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jaime Lannister",
+        "seed_rank": 2,
+        "mode": "top20",
+        "image": "/images/Jaime Lannister.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Theon Greyjoy",
+        "seed_rank": 3,
+        "mode": "top20",
+        "image": "/images/Theon Greyjoy.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cersei Lannister",
+        "seed_rank": 4,
+        "mode": "top20",
+        "image": "/images/Cersei Lannister.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Daenerys Targaryen",
+        "seed_rank": 5,
+        "mode": "top20",
+        "image": "/images/Daenerys Targaryen.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Jon Snow",
+        "seed_rank": 6,
+        "mode": "top20",
+        "image": "/images/Jon Snow.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Arya Stark",
+        "seed_rank": 7,
+        "mode": "top20",
+        "image": "/images/Arya Stark.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Sansa Stark",
+        "seed_rank": 8,
+        "mode": "top20",
+        "image": "/images/Sansa Stark.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Eddard Stark",
+        "seed_rank": 9,
+        "mode": "top20",
+        "image": "/images/Eddard Stark.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Tywin Lannister",
+        "seed_rank": 10,
+        "mode": "top20",
+        "image": "/images/Tywin Lannister.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Petyr Baelish",
+        "seed_rank": 11,
+        "mode": "top20",
+        "image": "/images/Petyr Baelish.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Varys",
+        "seed_rank": 12,
+        "mode": "top20",
+        "image": "/images/Varys.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Catelyn Stark",
+        "seed_rank": 13,
+        "mode": "top20",
+        "image": "/images/Catelyn Stark.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Robb Stark",
+        "seed_rank": 14,
+        "mode": "top20",
+        "image": "/images/Robb Stark.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Joffrey Baratheon",
+        "seed_rank": 15,
+        "mode": "top20",
+        "image": "/images/Joffrey Baratheon.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Sandor Clegane",
+        "seed_rank": 16,
+        "mode": "top20",
+        "image": "/images/Sandor Clegane.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Bran Stark",
+        "seed_rank": 17,
+        "mode": "top20",
+        "image": "/images/Bran Stark.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Stannis Baratheon",
+        "seed_rank": 18,
+        "mode": "top20",
+        "image": "/images/Stannis Baratheon.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Robert Baratheon",
+        "seed_rank": 19,
+        "mode": "top20",
+        "image": "/images/Robert Baratheon.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Olenna Tyrell",
+        "seed_rank": 20,
+        "mode": "top20",
+        "image": "/images/Olenna Tyrell.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Ramsay Bolton",
+        "seed_rank": 21,
+        "mode": "top50",
+        "image": "/images/Ramsay Bolton.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Davos Seaworth",
+        "seed_rank": 22,
+        "mode": "top50",
+        "image": "/images/Davos Seaworth.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Brienne of Tarth",
+        "seed_rank": 23,
+        "mode": "top50",
+        "image": "/images/Brienne of Tarth.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Melisandre",
+        "seed_rank": 24,
+        "mode": "top50",
+        "image": "/images/Melisandre.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Samwell Tarly",
+        "seed_rank": 25,
+        "mode": "top50",
+        "image": "/images/Samwell Tarly.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Jorah Mormont",
+        "seed_rank": 26,
+        "mode": "top50",
+        "image": "/images/Jorah Mormont.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Margaery Tyrell",
+        "seed_rank": 27,
+        "mode": "top50",
+        "image": "/images/Margaery Tyrell.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Walder Frey",
+        "seed_rank": 28,
+        "mode": "top50",
+        "image": "/images/Walder Frey.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Roose Bolton",
+        "seed_rank": 29,
+        "mode": "top50",
+        "image": "/images/Roose Bolton.jpg"
+    },
+    {
+        "id": 30,
+        "name": "High Sparrow",
+        "seed_rank": 30,
+        "mode": "top50",
+        "image": "/images/High Sparrow.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Khal Drogo",
+        "seed_rank": 31,
+        "mode": "top50",
+        "image": "/images/Khal Drogo.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Oberyn Martell",
+        "seed_rank": 32,
+        "mode": "top50",
+        "image": "/images/Oberyn Martell.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Jeor Mormont",
+        "seed_rank": 33,
+        "mode": "top50",
+        "image": "/images/Jeor Mormont.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Barristan Selmy",
+        "seed_rank": 34,
+        "mode": "top50",
+        "image": "/images/Barristan Selmy.jpg"
+    },
+    {
+        "id": 35,
+        "name": "Mance Rayder",
+        "seed_rank": 35,
+        "mode": "top50",
+        "image": "/images/Mance Rayder.jpg"
+    },
+    {
+        "id": 36,
+        "name": "Bronn",
+        "seed_rank": 36,
+        "mode": "top50",
+        "image": "/images/Bronn.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Tormund Giantsbane",
+        "seed_rank": 37,
+        "mode": "top50",
+        "image": "/images/Tormund Giantsbane.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Ygritte",
+        "seed_rank": 38,
+        "mode": "top50",
+        "image": "/images/Ygritte.jpg"
+    },
+    {
+        "id": 39,
+        "name": "Tommen Baratheon",
+        "seed_rank": 39,
+        "mode": "top50",
+        "image": "/images/Tommen Baratheon.jpg"
+    },
+    {
+        "id": 40,
+        "name": "Renly Baratheon",
+        "seed_rank": 40,
+        "mode": "top50",
+        "image": "/images/Renly Baratheon.jpg"
+    },
+    {
+        "id": 41,
+        "name": "Loras Tyrell",
+        "seed_rank": 41,
+        "mode": "top50",
+        "image": "/images/Loras Tyrell.jpg"
+    },
+    {
+        "id": 42,
+        "name": "Rhaegar Targaryen",
+        "seed_rank": 42,
+        "mode": "top50",
+        "image": "/images/Rhaegar Targaryen.jpg"
+    },
+    {
+        "id": 43,
+        "name": "Lyanna Stark",
+        "seed_rank": 43,
+        "mode": "top50",
+        "image": "/images/Lyanna Stark.jpg"
+    },
+    {
+        "id": 44,
+        "name": "Qyburn",
+        "seed_rank": 44,
+        "mode": "top50",
+        "image": "/images/Qyburn.jpg"
+    },
+    {
+        "id": 45,
+        "name": "Gendry",
+        "seed_rank": 45,
+        "mode": "top50",
+        "image": "/images/Gendry.jpg"
+    },
+    {
+        "id": 46,
+        "name": "Aemon Targaryen",
+        "seed_rank": 46,
+        "mode": "top50",
+        "image": "/images/Aemon Targaryen.jpg"
+    },
+    {
+        "id": 47,
+        "name": "Yara Greyjoy",
+        "seed_rank": 47,
+        "mode": "top50",
+        "image": "/images/Yara Greyjoy.jpg"
+    },
+    {
+        "id": 48,
+        "name": "Euron Greyjoy",
+        "seed_rank": 48,
+        "mode": "top50",
+        "image": "/images/Euron Greyjoy.jpg"
+    },
+    {
+        "id": 49,
+        "name": "Grey Worm",
+        "seed_rank": 49,
+        "mode": "top50",
+        "image": "/images/Grey Worm.jpg"
+    },
+    {
+        "id": 50,
+        "name": "Missandei",
+        "seed_rank": 50,
+        "mode": "top50",
+        "image": "/images/Missandei.jpg"
+    },
+    {
+        "id": 51,
+        "name": "Alliser Thorne",
+        "seed_rank": 51,
+        "mode": "all",
+        "image": "/images/Alliser Thorne.jpg"
+    },
+    {
+        "id": 52,
+        "name": "Hodor",
+        "seed_rank": 52,
+        "mode": "all",
+        "image": "/images/Hodor.jpg"
+    },
+    {
+        "id": 53,
+        "name": "Maester Luwin",
+        "seed_rank": 53,
+        "mode": "all",
+        "image": "/images/Maester Luwin.jpg"
+    },
+    {
+        "id": 54,
+        "name": "Viserys Targaryen",
+        "seed_rank": 54,
+        "mode": "all",
+        "image": "/images/Viserys Targaryen.jpg"
+    },
+    {
+        "id": 55,
+        "name": "Shae",
+        "seed_rank": 55,
+        "mode": "all",
+        "image": "/images/Shae.jpg"
+    },
+    {
+        "id": 56,
+        "name": "Beric Dondarrion",
+        "seed_rank": 56,
+        "mode": "all",
+        "image": "/images/Beric Dondarrion.jpg"
+    },
+    {
+        "id": 57,
+        "name": "Thoros of Myr",
+        "seed_rank": 57,
+        "mode": "all",
+        "image": "/images/Thoros of Myr.jpg"
+    },
+    {
+        "id": 58,
+        "name": "Night King",
+        "seed_rank": 58,
+        "mode": "all",
+        "image": "/images/Night King.jpg"
+    },
+    {
+        "id": 59,
+        "name": "Jaqen H'ghar",
+        "seed_rank": 59,
+        "mode": "all",
+        "image": "/images/Jaqen H'ghar.jpg"
+    },
+    {
+        "id": 60,
+        "name": "Podrick Payne",
+        "seed_rank": 60,
+        "mode": "all",
+        "image": "/images/Podrick Payne.jpg"
+    },
+    {
+        "id": 61,
+        "name": "Talisa Stark",
+        "seed_rank": 61,
+        "mode": "all",
+        "image": "/images/Talisa Stark.jpg"
+    },
+    {
+        "id": 62,
+        "name": "Daario Naharis",
+        "seed_rank": 62,
+        "mode": "all",
+        "image": "/images/Daario Naharis.jpg"
+    },
+    {
+        "id": 63,
+        "name": "Brynden Tully",
+        "seed_rank": 63,
+        "mode": "all",
+        "image": "/images/Brynden Tully.jpg"
+    },
+    {
+        "id": 64,
+        "name": "Meera Reed",
+        "seed_rank": 64,
+        "mode": "all",
+        "image": "/images/Meera Reed.jpg"
+    },
+    {
+        "id": 65,
+        "name": "Jojen Reed",
+        "seed_rank": 65,
+        "mode": "all",
+        "image": "/images/Jojen Reed.jpg"
+    },
+    {
+        "id": 66,
+        "name": "Benjen Stark",
+        "seed_rank": 66,
+        "mode": "all",
+        "image": "/images/Benjen Stark.jpg"
+    },
+    {
+        "id": 67,
+        "name": "Osha",
+        "seed_rank": 67,
+        "mode": "all",
+        "image": "/images/Osha.jpg"
+    },
+    {
+        "id": 68,
+        "name": "Lysa Arryn",
+        "seed_rank": 68,
+        "mode": "all",
+        "image": "/images/Lysa Arryn.jpg"
+    },
+    {
+        "id": 69,
+        "name": "Doran Martell",
+        "seed_rank": 69,
+        "mode": "all",
+        "image": "/images/Doran Martell.jpg"
+    },
+    {
+        "id": 70,
+        "name": "Ellaria Sand",
+        "seed_rank": 70,
+        "mode": "all",
+        "image": "/images/Ellaria Sand.jpg"
+    },
+    {
+        "id": 71,
+        "name": "Myrcella Baratheon",
+        "seed_rank": 71,
+        "mode": "all",
+        "image": "/images/Myrcella Baratheon.jpg"
+    },
+    {
+        "id": 72,
+        "name": "Randyll Tarly",
+        "seed_rank": 72,
+        "mode": "all",
+        "image": "/images/Randyll Tarly.jpg"
+    },
+    {
+        "id": 73,
+        "name": "Maester Pycelle",
+        "seed_rank": 73,
+        "mode": "all",
+        "image": "/images/Maester Pycelle.jpg"
+    },
+    {
+        "id": 74,
+        "name": "Lancel Lannister",
+        "seed_rank": 74,
+        "mode": "all",
+        "image": "/images/Lancel Lannister.jpg"
+    },
+    {
+        "id": 75,
+        "name": "Balon Greyjoy",
+        "seed_rank": 75,
+        "mode": "all",
+        "image": "/images/Balon Greyjoy.jpg"
+    },
+    {
+        "id": 76,
+        "name": "Rodrik Cassel",
+        "seed_rank": 76,
+        "mode": "all",
+        "image": "/images/Rodrik Cassel.jpg"
+    },
+    {
+        "id": 77,
+        "name": "Syrio Forel",
+        "seed_rank": 77,
+        "mode": "all",
+        "image": "/images/Syrio Forel.jpg"
+    },
+    {
+        "id": 78,
+        "name": "Magister Illyrio",
+        "seed_rank": 78,
+        "mode": "all",
+        "image": "/images/Magister Illyrio.jpg"
+    },
+    {
+        "id": 79,
+        "name": "Tycho Nestoris",
+        "seed_rank": 79,
+        "mode": "all",
+        "image": "/images/Tycho Nestoris.jpg"
+    },
+    {
+        "id": 80,
+        "name": "Robin Arryn",
+        "seed_rank": 80,
+        "mode": "all",
+        "image": "/images/Robin Arryn.jpg"
+    },
+    {
+        "id": 81,
+        "name": "Mace Tyrell",
+        "seed_rank": 81,
+        "mode": "all",
+        "image": "/images/Mace Tyrell.jpg"
+    },
+    {
+        "id": 82,
+        "name": "Rickard Stark",
+        "seed_rank": 82,
+        "mode": "all",
+        "image": "/images/Rickard Stark.jpg"
+    },
+    {
+        "id": 83,
+        "name": "Gilly",
+        "seed_rank": 83,
+        "mode": "all",
+        "image": "/images/Gilly.jpg"
+    },
+    {
+        "id": 84,
+        "name": "Eddison Tollett",
+        "seed_rank": 84,
+        "mode": "all",
+        "image": "/images/Eddison Tollett.jpg"
+    },
+    {
+        "id": 85,
+        "name": "Karl Tanner",
+        "seed_rank": 85,
+        "mode": "all",
+        "image": "/images/Karl Tanner.jpg"
+    },
+    {
+        "id": 86,
+        "name": "Ros",
+        "seed_rank": 86,
+        "mode": "all",
+        "image": "/images/Ros.jpg"
+    },
+    {
+        "id": 87,
+        "name": "Yohn Royce",
+        "seed_rank": 87,
+        "mode": "all",
+        "image": "/images/Yohn Royce.jpg"
+    },
+    {
+        "id": 88,
+        "name": "Rickon Stark",
+        "seed_rank": 88,
+        "mode": "all",
+        "image": "/images/Rickon Stark.jpg"
+    },
+    {
+        "id": 89,
+        "name": "Craster",
+        "seed_rank": 89,
+        "mode": "all",
+        "image": "/images/Craster.jpg"
+    },
+    {
+        "id": 90,
+        "name": "Hot Pie",
+        "seed_rank": 90,
+        "mode": "all",
+        "image": "/images/Hot Pie.jpg"
+    },
+    {
+        "id": 91,
+        "name": "Khal Moro",
+        "seed_rank": 91,
+        "mode": "all",
+        "image": "/images/Khal Moro.jpg"
+    },
+    {
+        "id": 92,
+        "name": "Leaf",
+        "seed_rank": 92,
+        "mode": "all",
+        "image": "/images/Leaf.jpg"
+    },
+    {
+        "id": 93,
+        "name": "Irri",
+        "seed_rank": 93,
+        "mode": "all",
+        "image": "/images/Irri.jpg"
+    },
+    {
+        "id": 94,
+        "name": "Trystane Martell",
+        "seed_rank": 94,
+        "mode": "all",
+        "image": "/images/Trystane Martell.jpg"
+    },
+    {
+        "id": 95,
+        "name": "Obara Sand",
+        "seed_rank": 95,
+        "mode": "all",
+        "image": "/images/Obara Sand.jpg"
+    },
+    {
+        "id": 96,
+        "name": "Nymeria Sand",
+        "seed_rank": 96,
+        "mode": "all",
+        "image": "/images/Nymeria Sand.jpg"
+    },
+    {
+        "id": 97,
+        "name": "Tyene Sand",
+        "seed_rank": 97,
+        "mode": "all",
+        "image": "/images/Tyene Sand.jpg"
+    },
+    {
+        "id": 98,
+        "name": "Dickon Tarly",
+        "seed_rank": 98,
+        "mode": "all",
+        "image": "/images/Dickon Tarly.jpg"
+    },
+    {
+        "id": 99,
+        "name": "Meryn Trant",
+        "seed_rank": 99,
+        "mode": "all",
+        "image": "/images/Meryn Trant.jpg"
+    },
+    {
+        "id": 100,
+        "name": "Gregor Clegane",
+        "seed_rank": 100,
+        "mode": "all",
+        "image": "/images/Gregor Clegane.jpg"
+    },
+    {
+        "id": 101,
+        "name": "Three-Eyed Raven",
+        "seed_rank": 101,
+        "mode": "all",
+        "image": "/images/Three-Eyed Raven.jpg"
+    },
+    {
+        "id": 102,
+        "name": "Xaro Xhoan Daxos",
+        "seed_rank": 102,
+        "mode": "all",
+        "image": "/images/Xaro Xhoan Daxos.jpg"
+    }
+]
