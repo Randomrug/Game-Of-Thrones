@@ -1,163 +1,164 @@
 # 🏰 Game of Thrones Character Ranker
 
-A slightly obsessive attempt to answer a question that has divided the realm for years:
+An interactive Game of Thrones ranking platform that uses community-driven voting and an Elo-inspired rating system to determine which characters truly deserve the Iron Throne.
 
-**Who is actually the best Game of Thrones character?**
-
-Not the strongest.
-
-Not the smartest.
-
-Not the one with the biggest dragon.
-
-Just... the best.
-
-Instead of assigning arbitrary scores, this project lets visitors decide through direct character matchups. Every battle influences a dynamic ranking system, allowing the leaderboard to evolve based on community choices.
+Instead of relying on predefined tier lists or personal opinions, visitors participate in direct head-to-head matchups. Every vote contributes to a dynamic ranking system that continuously evolves based on collective decisions from the community.
 
 ---
 
-# ⚔️ How It Works
+## 👑 Overview
 
-Visitors are shown two characters from the Game of Thrones universe.
+The objective of this project is simple:
 
-For every matchup, a choice must be made.
+**Determine the greatest Game of Thrones character through community-driven competition.**
 
-```text
-Jon Snow  vs  Tyrion Lannister
-```
+Each character starts on equal footing.
 
-Pick a winner.
+Visitors are repeatedly presented with two characters and must select a winner.
 
-The system records the result and updates character ratings accordingly.
+The selected character gains rating points while the losing character loses rating points.
 
-Over time, characters rise and fall based on community decisions rather than fixed rankings.
+Over time, rankings naturally emerge based on performance, allowing the community to build a data-driven hierarchy of Westeros.
 
 ---
 
-# 👑 Ranking System
-
-The ranking system is inspired by the Elo rating model used in competitive games and chess.
-
-Every character begins on equal footing.
-
-Winning against highly ranked characters provides larger rating gains, while losing to lower-ranked characters results in larger penalties.
-
-This allows the rankings to naturally evolve rather than relying on predetermined values.
-
-The system also tracks:
-
-* Wins
-* Losses
-* Win Percentage
-* Character Rating
-* Ranking Position
-
----
-
-# 📜 Features
+## ⚔️ Core Features
 
 ### Character Battles
 
-Head-to-head character comparisons.
+Users participate in direct one-versus-one character comparisons.
 
-Every decision contributes to the overall rankings.
+```text
+Jon Snow vs Tyrion Lannister
+```
+
+Every decision influences future rankings.
+
+---
+
+### Elo-Inspired Ranking System
+
+The ranking engine is based on principles used in competitive gaming and chess.
+
+Features:
+
+* Dynamic rating updates
+* Performance-based progression
+* Win/loss tracking
+* Rating adjustments based on opponent strength
+* Self-correcting leaderboard behavior
+
+This prevents rankings from being static and allows the system to adapt as more battles occur.
 
 ---
 
 ### Dynamic Leaderboard
 
-The leaderboard updates based on battle outcomes.
+The leaderboard automatically updates as battles are completed.
 
-Characters move up and down depending on performance.
+Tracked metrics include:
 
----
-
-### Tier Rankings
-
-Characters are automatically organized based on accumulated performance.
-
-This provides a clearer view of which characters consistently perform well across the community.
-
----
-
-### Complete Lineage Tracking
-
-The project includes lineage information for major houses and families.
-
-Visitors can explore relationships between characters and their family connections.
+* Global Rank
+* Character Rating
+* Wins
+* Losses
+* Win Percentage
+* Total Battles
 
 ---
 
-### Community Ravens
+### Tier Classification
 
-Visitors can leave anonymous comments through the Raven Board.
+Characters are grouped into performance tiers based on their ranking statistics.
+
+This provides a quick overview of the strongest and weakest contenders across the realm.
+
+---
+
+### Character Lineage Explorer
+
+The project contains lineage information for major Game of Thrones families and houses.
+
+Users can explore:
+
+* Family relationships
+* Bloodlines
+* House affiliations
+* Character connections
+
+---
+
+### Community Raven Board
+
+A Supabase-powered community feedback system allowing visitors to leave anonymous messages.
 
 Features include:
 
 * Anonymous posting
-* Comment timestamps
+* Timestamp tracking
+* Date filtering
 * Sorting by newest
 * Sorting by oldest
-* Sorting by popularity
-* Date-based filtering
-
-Comments are stored using Supabase and are shared across all visitors.
+* Popularity-based sorting
+* Shared comments across all visitors
 
 ---
 
 ### Statistics Dashboard
 
-Each character profile contains performance metrics such as:
+Each character accumulates detailed performance metrics throughout the ranking process.
+
+Statistics include:
 
 * Battles fought
 * Wins
 * Losses
-* Win rate
-* Current rating
-
-These statistics help explain why characters occupy their positions on the leaderboard.
+* Win percentage
+* Elo rating
+* Current leaderboard position
 
 ---
 
-### Immersive Theme
+### Themed User Experience
 
-The website includes:
+The application includes:
 
-* Game of Thrones inspired styling
-* Custom visual effects
+* Game of Thrones-inspired interface design
 * Character artwork
-* Theme music
-* Westeros-inspired interface elements
+* Themed navigation
+* Background music
+* Responsive layouts
+* Interactive animations
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ Technology Stack
 
 ### Frontend
 
 * HTML5
 * CSS3
-* JavaScript
+* JavaScript (Vanilla)
 
-### Database
+### Backend Services
 
 * Supabase
 
 Used for:
 
 * Community comments
-* Timestamps
-* Shared visitor interactions
+* Timestamp storage
+* Shared user interactions
 
-### Deployment
+### Hosting
 
 * Netlify
 
-Used to host and deploy the website.
+Used for deployment and public hosting.
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 Game-Of-Thrones-Ranker/
@@ -177,10 +178,10 @@ Game-Of-Thrones-Ranker/
 │   └── creatures.json
 
 ├── images/
-│   └── character assets
+│   └── Character assets
 
 ├── creatures/
-│   └── creature assets
+│   └── Creature assets
 
 ├── music/
 │   └── Game_of_Thrones_Theme_Song.mp3
@@ -188,105 +189,72 @@ Game-Of-Thrones-Ranker/
 
 ---
 
-# 📁 File Responsibilities
+## 📁 Component Responsibilities
 
-### index.html
-
-Main application interface.
-
-Contains character battles, rankings, leaderboards, and navigation.
-
----
-
-### about.html
-
-About page and community interaction hub.
-
-Contains the Raven Board where visitors can leave comments.
+| File        | Responsibility                                            |
+| ----------- | --------------------------------------------------------- |
+| index.html  | Main application interface                                |
+| about.html  | About page and community interaction hub                  |
+| script.js   | Core ranking engine and battle logic                      |
+| tier.js     | Tier calculations and leaderboard generation              |
+| roastme.js  | Comment system, sorting, filtering, Supabase integration  |
+| music.js    | Theme music management                                    |
+| style.css   | Styling, animations, and responsive design                |
+| supabase.js | Supabase client initialization and database communication |
 
 ---
 
-### script.js
+## 🧠 Ranking Methodology
 
-Core application logic.
+The ranking engine follows an Elo-inspired approach.
 
-Handles:
+Each battle produces:
 
-* Matchups
-* Ranking calculations
-* Statistics updates
-* Character progression
+1. A winner
+2. A loser
+3. A rating update
 
----
+Characters gain or lose points based on:
 
-### tier.js
+* Current rating
+* Opponent rating
+* Battle outcome
 
-Responsible for tier calculations and leaderboard presentation.
-
----
-
-### roastme.js
-
-Handles community reviews and comments.
-
-Includes:
-
-* Comment submission
-* Sorting
-* Filtering
-* Timestamp handling
-* Supabase integration
+This creates a dynamic ecosystem where rankings are earned through consistent performance rather than fixed assignments.
 
 ---
 
-### music.js
+## ⚠️ Known Issues
 
-Controls theme music playback and audio preferences.
-
----
-
-### style.css
-
-Contains all visual styling, layouts, animations, and responsive design rules.
+* The Like Button is currently under investigation by the Small Council.
+* Additional optimization of ranking transparency is planned for future updates.
 
 ---
 
-### supabase.js
+## 🚀 Future Improvements
 
-Initializes and manages communication with Supabase.
-
----
-
-### characters.json
-
-Stores character data and metadata.
+* Enhanced ranking analytics
+* Expanded lineage visualizations
+* Additional filtering and search tools
+* Improved mobile interactions
+* Advanced community features
 
 ---
 
-### creatures.json
+## 📜 Why This Project Exists
 
-Stores creature-related information used throughout the project.
+Because ranking Game of Thrones characters is strangely addictive.
 
----
+Because every fan believes their favorite deserves the throne.
 
-# ⚠️ Known Issues
-
-The Like Button is currently engaged in a political dispute with the Small Council.
-
-The maesters are investigating.
+And because giving thousands of people a leaderboard and asking them to disagree with each other seemed like an excellent idea.
 
 ---
 
-# Why This Project Exists
-
-Mostly because ranking Game of Thrones characters is strangely addictive.
-
-And because there are very few things more dangerous than giving fans a leaderboard and asking them to disagree with each other.
-
----
+**The Realm Has Spoken.**
 
 With Love,
 
 **RandomRug**
 
-📧 Ping me: **[rithikaarulmozhi21@gmail.com](mailto:rithikaarulmozhi21@gmail.com)**
+🐺📜 Raven Mail: **[jaimefuckinglannister7@gmail.com](mailto:jaimefuckinglannister7@gmail.com)**
