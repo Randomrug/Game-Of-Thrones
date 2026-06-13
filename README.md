@@ -1,5 +1,7 @@
 # 🏰 Game of Thrones Character Ranker
 
+## the app is live guysss.... https://game-of-thrones-ranker.netlify.app/ 
+
 An interactive Game of Thrones ranking platform that uses community-driven voting and an Elo-inspired rating system to determine which characters truly deserve the Iron Throne.
 
 Instead of relying on predefined tier lists or personal opinions, visitors participate in direct head-to-head matchups. Every vote contributes to a dynamic ranking system that continuously evolves based on collective decisions from the community.
